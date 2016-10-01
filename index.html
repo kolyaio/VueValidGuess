@@ -60,9 +60,9 @@
             </tr>
           </thead>
           <tbody>
-              <tr v-for="n in 3">
-                <td>{{guesses[n]}}</td>
-                <td>{{randoms[n]}}</td>
+              <tr v-for="guess in guesses" track-by="$index">
+                <td>{{guesses[$index]}}</td>
+                <td>{{randoms[$index]}}</td>
               </tr>
           </tbody>
         </table>
